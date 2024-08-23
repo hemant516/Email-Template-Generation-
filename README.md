@@ -31,5 +31,67 @@ Incorporating adaptability to accommodate various communication contexts and use
 
 
 Expected Contributions:
+
 This research contributes to the field by introducing an innovative solution to the challenges posed by the manual effort involved in crafting emails. The automation of standardization and template generation is anticipated to reduce the cognitive load on users, enhance communication efficiency, and promote consistency in professional correspondence.
 
+Features:
+
+The project aims to automate email standardization and template generation using NLP techniques. Key features include:
+
+Text Mining and Feature Extraction: Identification of recurring patterns, common phrases, and linguistic features within email content.
+NLP Analysis: Application of sentiment analysis and Named Entity Recognition (NER) to understand the emotional tone and context of emails.
+Template Generation: Development of machine learning algorithms that generate standardized email templates, adaptable to different communication contexts and user preferences.
+
+Architecture Diagram:
+ 
+The architecture isn't explicitly stated in the document, but based on the methodology and process, the following components are likely part of the architecture:
+
+Data Collection:  Collection of email samples.
+Data Preprocessing:   Cleaning and preparing data for analysis.
+Embedding Generation:  Using NLP models like Hugging Face’s Sentence Transformers to convert text into embeddings.
+Dimensionality Reduction:  Reducing embedding dimensions to simplify the clustering process.
+Clustering:  Grouping similar emails based on their reduced embeddings.
+Template Generation:  Using NLP models to extract and standardize templates from pure clusters.
+
+ Flow:
+   
+The flow of the program can be summarized as follows:
+
+Data Collection: Gather email samples, in this case, 1000 samples from the logistics domain.
+Preprocessing: Clean and prepare the emails for analysis.
+Embedding Generation: Convert the emails into numerical representations (embeddings).
+Dimensionality Reduction: Reduce the dimensionality of these embeddings for easier clustering.
+Clustering: Group similar emails together. If a cluster is dense and centered, it is considered "pure" and suitable for template extraction.
+Template Extraction: From pure clusters, extract standardized templates using NLP techniques.
+
+Design:
+
+The design involves several NLP and machine learning techniques:
+
+Sentence Embeddings: Using models from Hugging Face's Sentence Transformers.
+Dimensionality Reduction: Likely using techniques like PCA or t-SNE to reduce embedding dimensions.
+Clustering: Applying clustering algorithms (e.g., K-means) to group similar emails.
+Template Extraction: Extracting common structures from pure clusters to create standardized email templates.
+
+Platform:
+
+The project utilizes various NLP and machine learning platforms:
+
+Hugging Face Sentence Transformers: For generating sentence embeddings.
+Python/Jupyter Notebooks: The code appears to be implemented in a Jupyter notebook, implying Python is the primary language.
+NLP Libraries: Libraries for text processing, sentiment analysis, and NER.
+
+Problems Faced:
+
+The document mentions some challenges encountered:
+
+Cluster Purity: Difficulty in extracting templates from "impure" clusters, where emails are not closely related or centered around a specific theme.
+Standardization Complexity: Ensuring that the templates are standardized across different communication contexts while maintaining relevance and clarity
+
+ Requirement Text:
+ The project requires:
+
+A dataset of emails, which has been collected (1000 samples).
+NLP tools and models for text processing, sentiment analysis, and NER.
+Machine learning algorithms for clustering and template generation.
+Adequate computational resources for processing large amounts of text data and training models.
