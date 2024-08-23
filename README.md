@@ -89,9 +89,13 @@ Cluster Purity: Difficulty in extracting templates from "impure" clusters, where
 Standardization Complexity: Ensuring that the templates are standardized across different communication contexts while maintaining relevance and clarity
 
  Requirement Text:
- The project requires:
+ The project re![PHOTO-2024-08-24-03-45-51](https://github.com/user-attachments/assets/0cd6205b-48c5-4040-9c2c-d044fdb1e793)
+quires:
 
 A dataset of emails, which has been collected (1000 samples).
 NLP tools and models for text processing, sentiment analysis, and NER.
 Machine learning algorithms for clustering and template generation.
 Adequate computational resources for processing large amounts of text data and training models.
+
+
+
